@@ -69,7 +69,7 @@ if page == "🗺️ Journey & Overview":
         <div class="step step-active">4. Key Findings</div>
         <div class="step step-active">5. Recommendations</div>
     </div>
-    """, unsafe_allow_dict=True)
+    """, unsafe_allow_html=True)
     
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Total Sessions", f"{results['n_sessions']:,}")
