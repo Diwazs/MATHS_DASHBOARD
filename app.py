@@ -86,8 +86,8 @@ elif page == "🧹 Data Cleaning & Preprocessing":
 elif page == "📊 Channel Scorecard (Probability)":
     st.title("📊 Channel Scorecard")
     if results and "channels" in results:
-    df_channels = pd.DataFrame(results["channels"])
-    st.bar_chart(df_channels.set_index("TrafficType")["conversion_rate"])
+        df_channels = pd.DataFrame(results["channels"])
+        st.bar_chart(df_channels.set_index("TrafficType")["conversion_rate"])
     else:
         st.warning("Please ensure results.json is pushed.")
 
