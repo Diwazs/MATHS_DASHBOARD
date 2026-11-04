@@ -23,7 +23,7 @@ st.markdown("""
     .step { flex: 1; text-align: center; padding: 10px; background: #e9ecef; margin: 0 4px; border-radius: 6px; font-weight: bold; }
     .step-active { background: #1f4e79; color: white; }
 </style>
-""", unsafe_allow_dict=True)
+""", unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
